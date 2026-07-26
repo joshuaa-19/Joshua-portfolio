@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua A — Frontend Developer & Application Support Engineer</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Subtle 3D Interactive Canvas -->
+  <canvas id="webgl-bg"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Joshua<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="btn-nav">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero">
+    <div class="hero-container">
+      <!-- Left Side: Name, Tagline, Intro & Resume Actions -->
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="status-dot"></span> Growth/Learning Mindset
+        </div>
+        
+        <h1>Joshua A</h1>
+        <h2 class="hero-tagline">Front End Developer & Application Support Engineer</h2>
+        
+        <p class="hero-subtext">
+          Computer Science graduate specializing in building responsive web applications and providing technical application support. Passionate about clean code, scalable interfaces, and cloud computing solutions.
+        </p>
+        
+        <!-- Resume Action Buttons -->
+        <div class="hero-actions">
+          <button id="openResumeModal" class="btn btn-primary">
+            <i class="fa-regular fa-eye"></i> View Resume
+          </button>
+          <a href="Joshuaresume.pdf" download="Joshua_A_Resume.pdf" class="btn btn-secondary">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
+
+        <div class="social-strip">
+          <a href="https://linkedin.com/in/joshua-a-214b1b371" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/joshuaa-19" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:joshuaantonyjerom@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          <span class="location-tag"><i class="fa-solid fa-location-dot"></i> Nilgiris, Tamil Nadu, India</span>
+        </div>
+      </div>
+
+      <!-- Right Side: User Photo -->
+      <div class="hero-image-wrapper js-tilt-card">
+        <div class="image-frame">
+          <img src="profile.jpg" alt="Joshua A" id="userPhoto" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80'">
+          <div class="experience-badge">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div>
+              <strong>Front End Developer Intern</strong>
+              <span>Let's Game Technology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Streamlined 2-Paragraph About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Background</span>
+        <h2>About Me</h2>
+        <div class="line"></div>
+      </div>
+      
+      <div class="about-paragraphs-card js-tilt-card">
+        <p>
+          <strong>B.Sc Computer Science with Applications graduate</strong> from Sri Krishna Arts and Science College with hands-on experience in modern web development and IT infrastructure support. During my internship at <strong>Let's Game Technology</strong>, I focused on building responsive user interface modules with HTML5, CSS3, and JavaScript, ensuring cross-browser compatibility and optimized performance across devices.
+        </p>
+        <p>
+          My technical toolkit spans core frontend languages, backend fundamentals with Python, Node.js, and SQL, along with strong systems knowledge in cloud infrastructure (AWS) and networking concepts like TCP/IP, DNS, and DHCP. Combining technical troubleshooting with interface design, I excel at solving technical issues, maintaining application stability, and delivering seamless user experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Arsenal -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Capabilities</span>
+        <h2>Technical Arsenal</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="skills-wrapper">
+        <div class="skill-category js-tilt-card">
+          <h3><i class="fa-solid fa-laptop-code"></i> Frontend & UI</h3>
+          <div class="pill-group">
+            <span class="pill">JavaScript (ES6+)</span>
+            <span class="pill">HTML5 & CSS3</span>
+            <span class="pill">REST API Integration</span>
+            <span class="pill">Figma (UI Layouts)</span>
+            <span class="pill">Responsive Web Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category js-tilt-card">
+          <h3><i class="fa-solid fa-terminal"></i> Backend & Databases</h3>
+          <div class="pill-group">
+            <span class="pill">Python</span>
+            <span class="pill">SQL / MySQL</span>
+            <span class="pill">Node.js (Fundamentals)</span>
+            <span class="pill">Git & GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-category js-tilt-card">
+          <h3><i class="fa-solid fa-headset"></i> Application & IT Support</h3>
+          <div class="pill-group">
+            <span class="pill">Troubleshooting & Incident Mgmt</span>
+            <span class="pill">TCP/IP, DNS, DHCP & VPN</span>
+            <span class="pill">Windows 10/11 & Linux</span>
+            <span class="pill">Active Directory Basics</span>
+          </div>
+        </div>
+
+        <div class="skill-category js-tilt-card">
+          <h3><i class="fa-solid fa-cloud"></i> Cloud & Analytics</h3>
+          <div class="pill-group">
+            <span class="pill">AWS Cloud Foundations</span>
+            <span class="pill">Cloud Masterclass (NASSCOM)</span>
+            <span class="pill">Microsoft Excel & Data Reporting</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Selected Work</span>
+        <h2>Projects</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card js-tilt-card">
+          <div class="project-content">
+            <div class="project-tags">
+              <span>Python</span><span>JavaScript</span><span>HTML/CSS</span>
+            </div>
+            <h3>Advanced QR Code Generator</h3>
+            <p>A web application that dynamically creates customizable QR codes for URLs, text, and contact vCards with client-side real-time rendering.</p>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card js-tilt-card">
+          <div class="project-content">
+            <div class="project-tags">
+              <span>Python</span><span>Machine Learning</span><span>NLP</span>
+            </div>
+            <h3>Sentiment Analysis System</h3>
+            <p>An NLP machine learning model built to process user reviews and feedback, classifying unstructured data into sentiment categories.</p>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card js-tilt-card">
+          <div class="project-content">
+            <div class="project-tags">
+              <span>JavaScript</span><span>SQL</span><span>HTML/CSS</span>
+            </div>
+            <h3>IT Help Desk Ticketing System</h3>
+            <p>An incident management system created to categorize tickets, assign priorities, track system issues, and optimize application support workflows.</p>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> Repository</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card js-tilt-card">
+          <div class="project-content">
+            <div class="project-tags">
+              <span>AWS</span><span>Networking</span><span>Linux</span>
+            </div>
+            <h3>Cloud Infrastructure & Network Lab</h3>
+            <p>Configured Virtual Private Clouds (VPC), subnet routing, and firewall rules on AWS to model secure cloud environment architectures.</p>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> Repository</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+ <!-- Certifications Section with Crisp Icons -->
+<section id="certifications" class="section cert-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">Verified Credentials</span>
+      <h2>Certifications</h2>
+      <div class="line"></div>
+    </div>
+
+    <div class="cert-grid">
+      <!-- AWS -->
+      <div class="cert-card js-tilt-card">
+        <div class="cert-header">
+          <i class="fa-brands fa-aws cert-icon aws"></i>
+          <span class="cert-badge">AWS</span>
+        </div>
+        <h3>AWS Cloud Practitioner Essentials</h3>
+        <p class="cert-issuer">Amazon Web Services</p>
+      </div>
+
+      <!-- Oracle JavaScript -->
+      <div class="cert-card js-tilt-card">
+        <div class="cert-header">
+          <i class="fa-brands fa-js cert-icon js"></i>
+          <span class="cert-badge">Oracle</span>
+        </div>
+        <h3>Oracle JavaScript Certification</h3>
+        <p class="cert-issuer">Coursera / Oracle</p>
+      </div>
+
+      <!-- NASSCOM Cloud Masterclass -->
+      <div class="cert-card js-tilt-card">
+        <div class="cert-header">
+          <i class="fa-solid fa-cloud-arrow-up cert-icon cloud"></i>
+          <span class="cert-badge">NASSCOM</span>
+        </div>
+        <h3>Cloud Masterclass</h3>
+        <p class="cert-issuer">NASSCOM FutureSkills</p>
+      </div>
+
+      <!-- NPTEL Soft Skills -->
+      <div class="cert-card js-tilt-card">
+        <div class="cert-header">
+          <i class="fa-solid fa-user-graduate cert-icon nptel"></i>
+          <span class="cert-badge">NPTEL</span>
+        </div>
+        <h3>Developing Soft Skills</h3>
+        <p class="cert-issuer">NPTEL / IIT</p>
+      </div>
+
+      <!-- Microsoft Excel -->
+      <div class="cert-card js-tilt-card">
+        <div class="cert-header">
+          <i class="fa-brands fa-microsoft cert-icon msft"></i>
+          <span class="cert-badge">Microsoft</span>
+        </div>
+        <h3>Microsoft Excel Essentials</h3>
+        <p class="cert-issuer">Microsoft</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Professional Track</span>
+        <h2>Experience</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="timeline">
+        <!-- Single Internship Role with Expanded Frontend Points -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">April 2025 — June 2025</div>
+          <div class="timeline-content">
+            <h3>Front End Developer Intern</h3>
+            <h4>Let's Game Technology</h4>
+            <ul>
+              <li>Architected and styled modular, fully responsive user interface components using semantic HTML5, modern CSS3 (Flexbox/Grid), and JavaScript (ES6+).</li>
+              <li>Engineered smooth DOM interactions and client-side logic to optimize rendering speed, application performance, and cross-browser responsiveness.</li>
+              <li>Collaborated directly with designers and backend teams to convert UI/UX wireframes and API endpoints into seamless, interactive web interfaces.</li>
+              <li>Identified and resolved complex layout bugs, accessibility issues, and CSS rendering glitches across multiple desktop and mobile devices.</li>
+              <li>Utilized Git and GitHub for daily code review workflows, structured feature branching, and clean version control management.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container footer-container">
+      <h2>Let's build reliable software together.</h2>
+      <p>Currently open to Frontend, Application Support, and Software Engineering roles.</p>
+      <a href="mailto:joshuaantonyjerom@gmail.com" class="email-btn">joshuaantonyjerom@gmail.com</a>
+      <div class="footer-bottom">
+        <p>© 2026 Joshua A. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Resume Modal -->
+  <div id="resumeModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Joshua A — Resume</h3>
+        <div class="modal-actions">
+          <a href="Joshuaresume.pdf" download="Joshua_A_Resume.pdf" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+          <button class="close-modal" id="closeResumeModal">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe src="Joshuaresume.pdf" title="Resume PDF Preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
