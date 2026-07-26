@@ -266,25 +266,16 @@ a {
 }
 
 /* Image Card Right */
-.hero-image-wrapper {
-  position: relative;
+.hero-image {
+    margin: 20px 0;
+    text-align: center;
 }
 
-.image-frame {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid var(--border-color);
-  background: var(--bg-card);
-  max-width: 320px;
-  margin: 0 auto;
-}
-
-.image-frame img {
-  width: 100%;
-  height: 310px;
-  object-fit: cover;
-  display: block;
+.profile-pic {
+    width: 220px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 .experience-badge {
