@@ -47,13 +47,15 @@
           Computer Science graduate specializing in building responsive web applications and providing technical application support. Passionate about clean code, scalable interfaces, and cloud computing solutions.
         </p>
         
-        <!-- Resume Action Buttons -->
-        <div class="hero-actions">
-          <a herf="./Joshuaresume.pdf" target="_blank" class="btn btn-primary"><i class="fa-regular fa-eye"></i> View Resume </a>
-          <a href="./Joshuaresume.pdf" download="Joshua_A_Resume.pdf" class="btn btn-secondary">
-            <i class="fa-solid fa-download"></i> Download Resume
-          </a>
-        </div>
+       <!-- Clean Resume Concept Buttons -->
+<div class="hero-actions">
+    <a href="Joshuaresume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        <i class="fa-regular fa-eye"></i> View Resume
+    </a>
+    <a href="Joshuaresume.pdf" download="Joshua_A_Resume.pdf" class="btn btn-secondary">
+        <i class="fa-solid fa-download"></i> Download Resume
+    </a>
+</div>
 
         <div class="social-strip">
           <a href="https://linkedin.com/in/joshua-a-214b1b371" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -322,6 +324,24 @@
       </div>
     </div>
   </footer>
+
+  <!-- Resume Modal -->
+  <div id="resumeModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Joshua A — Resume</h3>
+        <div class="modal-actions">
+          <a href="Joshuaresume.pdf" download="Joshua_A_Resume.pdf" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+          <button class="close-modal" id="closeResumeModal">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe src="Joshuaresume.pdf" title="Resume PDF Preview"></iframe>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="script.js"></script>
