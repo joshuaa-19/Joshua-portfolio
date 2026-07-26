@@ -73,21 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* 3. Resume Modal Controls */
-  const modal = document.getElementById('resumeModal');
-  const openBtn = document.getElementById('openResumeModal');
-  const closeBtn = document.getElementById('closeResumeModal');
-
-  if (openBtn && modal && closeBtn) {
-    openBtn.addEventListener('click', () => {
-      modal.style.display = 'flex';
-      document.body.style.overflow = 'hidden';
-    });
-
-    closeBtn.addEventListener('click', () => {
-      modal.style.display = 'none';
-      document.body.style.overflow = 'auto';
-    });
 
     window.addEventListener('click', (e) => {
       if (e.target === modal) {
